@@ -53,7 +53,7 @@ app.use((error, req, res, next) => {
     res.json({ message: error.message || 'An unknown error occurred!' });
   });
 
-mongoose.connect('mongodb+srv://raghav:eBcoWEwcErcWxc2U@cluster0.8sxsw.mongodb.net/myFirstDatabase?retryWrites=true&w=majority')
+mongoose.connect('')
  .then( () => {
     app.listen(process.env.PORT || 5000);
  })
@@ -63,3 +63,4 @@ mongoose.connect('mongodb+srv://raghav:eBcoWEwcErcWxc2U@cluster0.8sxsw.mongodb.n
 
 
 
+ 
